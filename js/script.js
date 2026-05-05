@@ -28,58 +28,54 @@ const exercicio2 = () => {
 };
 
 const exercicio3 = () => {
-    let resultado = document.getElementById("resultado");
+  let resultado = document.getElementById("resultado");
 
-    let erro = document.getElementById("erro");
+  let erro = document.getElementById("erro");
 
-    let numero = document.getElementById("num").value;
+  let numero = document.getElementById("num").value;
 
-    // Variável Booleana apenas true/false
-    let primo = true
+  // Variável Booleana apenas true/false
+  let primo = true;
 
-    if (numero <= 0){
-        erro.innerHTML = 'Digite um número maior que 0'
-        resultado.innerHTML = '';
-        return; //interrompe a função
-    } else {
-        //  Loop para verificar se existe algum divisor
-        // além de 1 e ele mesmo
-        for(let i = 2; i < numero; i++){
-            if(numero % i == 0){
-                primo = false;
-            }
-        }
+  if (numero <= 0) {
+    erro.innerHTML = "Digite um número maior que 0";
+    resultado.innerHTML = "";
+    return; //interrompe a função
+  } else {
+    //  Loop para verificar se existe algum divisor
+    // além de 1 e ele mesmo
+    for (let i = 2; i < numero; i++) {
+      if (numero % i == 0) {
+        primo = false;
+      }
     }
+  }
 
-    //Verificação Final
-    if(primo){
-        // Se permacer true ao tentar validar
-        // ele será primo
-        resultado.innerHTML = `O número ${numero} é primo`;
-        erro.innerHTML = '';
-    } else {
-        resultado.innerHTML = `O número ${numero} não é primo`;
-        erro.innerHTML = '';
-    }
-}
-
-const exercicio4 = () => {
-    let resposta = document.getElementById("resposta")
-
-    let erro = document.getElementById("erro")
-
-    let resultado = document.getElementById("resultado")
-
-    let vaide = '#'
-    for (let i = 0; i <= 10;) {
-        vaide = i * "#"
-    }
-  resposta.innerHTML = resultado;
-
-
+  //Verificação Final
+  if (primo) {
+    // Se permacer true ao tentar validar
+    // ele será primo
+    resultado.innerHTML = `O número ${numero} é primo`;
+    erro.innerHTML = "";
+  } else {
+    resultado.innerHTML = `O número ${numero} não é primo`;
+    erro.innerHTML = "";
+  }
 };
 
+const exercicio4 = () => {
+  let resposta = document.getElementById("resposta");
 
+  let erro = document.getElementById("erro");
+
+  let resultado = document.getElementById("resultado");
+
+  let vaide = "#";
+  for (let i = 0; i <= 10; ) {
+    vaide = i * "#";
+  }
+  resposta.innerHTML = resultado;
+};
 
 const exercicio16 = () => {
   let resultado = document.getElementById("resultado");
