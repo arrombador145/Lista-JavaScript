@@ -13,6 +13,7 @@ const exercicio1 = () => {
   resposta.innerHTML = resultado;
   return;
 };
+//----------------------------------------------------
 
 const exercicio2 = () => {
   let resposta = document.getElementById("resposta");
@@ -26,6 +27,7 @@ const exercicio2 = () => {
   }
   resposta.innerHTML = resultado;
 };
+//------------------------------------------------------
 
 const exercicio3 = () => {
   let resultado = document.getElementById("resultado");
@@ -62,20 +64,42 @@ const exercicio3 = () => {
     erro.innerHTML = "";
   }
 };
-
+//----------------------------------------------------------
 const exercicio4 = () => {
-  let resposta = document.getElementById("resposta");
+  let calc = document.getElementById("num").value;
 
-  let erro = document.getElementById("erro");
-
-  let resultado = document.getElementById("resultado");
-
-  let vaide = "#";
-  for (let i = 0; i <= 10; ) {
-    vaide = i * "#";
+  resultado.innerHTML = "";
+  for (let i = 0; i <= 10; i++) {
+    resultado.innerHTML += `${calc} x ${i} = ${calc * i} <br>`;
   }
-  resposta.innerHTML = resultado;
 };
+
+//------------------------------------------------------------
+const exercicio5 = () => {
+  let numero = document.getElementById("num").value;
+  let resultado = document.getElementById("resultado");
+  resultado.innerHTML = "";
+
+  let contador = 0;
+
+  while (contador <= numero) {
+    if (contador % 2 !== 0) resultado.innerHTML += contador + " | ";
+    contador++;
+  }
+};
+//------------------------------------------------------------
+const exercicio6 = () => {
+  let toaki = document.getElementById("num").value
+  let resultado = document.getElementById("resultado")
+
+  for (let i =+ 0; i <= toaki; let = i++) {
+    resultado.innerHTML += `${toaki} + ${i} = ${toaki + i} <br>`
+  }
+  
+};
+//------------------------------------------------------------
+
+
 
 const exercicio16 = () => {
   let resultado = document.getElementById("resultado");
