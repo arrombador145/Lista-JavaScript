@@ -93,7 +93,7 @@ const exercicio6 = () => {
   let resultado = document.getElementById("resultado")
 
   for (let i =+ 0; i <= toaki; let = i++) {
-    resultado.innerHTML += `${toaki} + ${i} = ${toaki + i} <br>`
+    resultado.innerHTML += `${toaki} + ${i} = ${toaki + i} <br>`;
   }
   
 };
