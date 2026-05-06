@@ -89,18 +89,84 @@ const exercicio5 = () => {
 };
 //------------------------------------------------------------
 const exercicio6 = () => {
-  let toaki = document.getElementById("num").value
+  let toaki = parseInt(document.getElementById("num").value)
   let resultado = document.getElementById("resultado")
 
+  resultado.innerHTML = ""
   for (let i =+ 0; i <= toaki; let = i++) {
     resultado.innerHTML += `${toaki} + ${i} = ${toaki + i} <br>`;
   }
   
 };
 //------------------------------------------------------------
+const exercicio7 = () => {
+   let resultado = document.getElementById("")
+  while (10 >= 1) {
+    
+  }
+};
+//------------------------------------------------------------
+const exercicio8 = () => {
+  let resultado = document.getElementById("resultado");
+  let erro = document.getElementById("erro");
+  let palavra = document.getElementById("palavra").value;
+
+  // Limpar os campos da tela, caso tenha alguma coisa.
+  resultado.innerHTML = "";
+  erro.innerHTML = "";
+
+  // Variavel para armazenar a palavra invertida
+  let palavraInvertida = "";
+
+  //Loop de 1 até o "tamanho" da palavra
+  for (let i = palavra.length - 1; i >= 0; i--) {
+    palavraInvertida += palavra[i];
+  }
+
+  // Exibir a palavra invertida no resultado
+  resultado.innerHTML = `A palavra invertida é: ${palavraInvertida}`;
+  erro.innerHTML = "";
+
+  if (palavra == palavraInvertida) {
+    resultado.innerHTML += "<br/> A palavra é um palíndromo";
+  } else {
+    resultado.innerHTML += "<br/> A palavra não é um palíndromo";
+  }
+};
 
 
+//------------------------------------------------------------
+  let soma = 0;
+  let  contador = 0;
+const exercicio10 = () => {
 
+  let resultado = document.getElementById("resultado");
+  let erro = document.getElementById("erro");
+  let numero = document.getElementById("num").value;
+
+  /*
+if (numero != "0"){
+  soma += parseFloat(numero)
+  contador++
+}
+
+resultado.innerHTML = `a média dos numeros  digitados é ${soma/contador}`
+erro.innerHTML = "";
+};
+*/
+while (numero != "0") {
+  soma += parseFloat(numero)
+  contador++
+  numero = prompt("digite um número: ")
+}
+if (contador > 0) {
+  resultado.innerHTML = `foram digitados ${contador} numeros. a media da soma dos numeros digitados é: ${soma / contador}`;
+  erro.innerHTML = "";
+}
+soma = 0;
+contador = 0;
+}
+//------------------------------------------------------------
 const exercicio16 = () => {
   let resultado = document.getElementById("resultado");
   let erro = document.getElementById("erro");
